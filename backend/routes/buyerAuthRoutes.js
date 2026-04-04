@@ -138,7 +138,7 @@ router.post("/login", async (req, res) => {
 
     } catch (err) {
         console.log("Buyer Login Error:", err)
-        return res.status(500).json({ message: "Server error" })
+        return res.status(500).json({ message: `Server error Buyer ${err}` })
     }
 })
 
